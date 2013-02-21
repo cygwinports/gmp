@@ -1,0 +1,17 @@
+NAME="gmp"
+VERSION=5.1.1
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="GNU Multiple Precision arithmetic library"
+DESCRIPTION="GMP is a free library for arbitrary precision arithmetic,
+operating on signed integers, rational numbers, and floating point numbers.
+There is no practical limit to the precision except the ones implied by the
+available memory in the machine GMP runs on. GMP has a rich set of functions,
+and the functions have a regular interface."
+HOMEPAGE="http://gmplib.org/"
+SRC_URI="ftp://ftp.gmplib.org/pub/gmp-${VERSION}/gmp-${VERSION}.tar.bz2"
+SRC_DIR="gmp-${VERSION}"
+
+CYGCONF_ARGS="--enable-cxx"
+
+KEEP_LA_FILES="none"

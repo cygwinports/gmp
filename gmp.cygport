@@ -11,7 +11,14 @@ and the functions have a regular interface."
 HOMEPAGE="http://gmplib.org/"
 SRC_URI="ftp://ftp.gmplib.org/pub/gmp-${VERSION}/gmp-${VERSION}.tar.bz2"
 SRC_DIR="gmp-${VERSION}"
+PATCH_URI="5.1.1-libtool22.patch"
+
+PKG_NAMES="libgmp10 libgmpxx4 libgmp-devel"
+libgmp10_SUMMARY="${SUMMARY} (C runtime)"
+libgmp10_CONTENTS="usr/bin/cyggmp-10.dll"
+libgmpxx4_SUMMARY="${SUMMARY} (C++ runtime)"
+libgmpxx4_CONTENTS="usr/bin/cyggmpxx-4.dll"
+libgmp_devel_SUMMARY="${SUMMARY} (development)"
+libgmp_devel_CONTENTS="usr/include/ usr/lib/ usr/share/doc/ usr/share/info/"
 
 CYGCONF_ARGS="--enable-cxx"
-
-KEEP_LA_FILES="none"
